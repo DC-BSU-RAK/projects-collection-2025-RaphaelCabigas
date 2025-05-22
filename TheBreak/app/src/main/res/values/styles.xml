@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="popUpAnimation">
+        <item name="android:windowEnterAnimation">@anim/scale_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_fade_out</item>
+    </style>
+    <style name="timerEditor" parent="Widget.MaterialComponents.TimePicker">
+        <item name="clockFaceBackgroundColor">@color/black</item>
+        <item name="clockNumberTextColor">@color/white</item>
+        <item name="materialButtonStyle">@style/editorBtn</item>
+        <item name="materialTimePickerTitleStyle">@style/timerTitle</item>
+    </style>
+    <style name="editorBtn" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/white</item>
+    </style>
+    <style name="timerTitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="timerTheme" parent="ThemeOverlay.Material3.MaterialTimePicker">
+        <item name="materialTimePickerStyle">@style/timerEditor</item>
+    </style>
+    <style name="imageBtn">
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:fontFamily">@font/comfortaabold</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="imageBgms">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+    <style name="imageNavs">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:fontFamily">@font/comfortaabold</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="imageTimer">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">50dp</item>
+    <item name="android:scaleType">centerInside</item>
+    <item name="android:fontFamily">@font/comfortaabold</item>
+    <item name="android:background">@null</item>
+    </style>
+</resources>

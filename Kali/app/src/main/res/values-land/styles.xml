@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tine">
+        <item name="android:gravity">bottom|center_horizontal|center_vertical</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:paddingBottom">50dp</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:fontFamily">@font/nunitoblack</item>
+        <item name="android:backgroundTint">@color/lightgreen</item>
+        <item name="android:textColor">@color/darkgreen</item>
+    </style>
+</resources>

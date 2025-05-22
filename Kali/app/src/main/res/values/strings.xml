@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Kali</string>
+    <string name="open">Instructions</string>
+    <string name="close">Close</string>
+
+    <string name="note_1">C4</string>
+    <string name="note_2">A3</string>
+    <string name="note_3">F3</string>
+    <string name="note_4">D3</string>
+    <string name="note_5">C3</string>
+    <string name="note_6">E3</string>
+    <string name="note_7">G3</string>
+    <string name="note_8">B3</string>
+    <string name="note_9">D4</string>
+
+    <string name="pin_1">A</string>
+    <string name="pin_2">B</string>
+    <string name="pin_3">C</string>
+    <string name="pin_4">D</string>
+    <string name="pin_5">E</string>
+    <string name="pin_6">F</string>
+    <string name="pin_7">G</string>
+    <string name="pin_8">H</string>
+    <string name="pin_9">I</string>
+
+    <string name="mode_play">Play Kalimba</string>
+    <string name="mode_pin">Unlock Pets</string>
+    <string name="left_btn">Left</string>
+    <string name="right_btn">Right</string>
+    <string name="instructions_btn">Help</string>
+</resources>

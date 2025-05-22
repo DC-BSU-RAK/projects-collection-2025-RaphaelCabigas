@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/comfortaabold"
+        android:text="@string/default_timer"
+        android:textColor="@color/black"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toTopOf="@+id/timerOptionsContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/timerOptionsContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="94dp"
+        app:constraint_referenced_ids="editBtn,startBtn"
+        app:flow_horizontalStyle="packed"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435" />
+
+    <ImageButton
+        android:id="@+id/editBtn"
+        style="@style/imageTimer"
+        android:contentDescription="@string/timer_edit_str"
+        android:src="@drawable/timer_edit_btn"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/startBtn"
+        style="@style/imageTimer"
+        android:contentDescription="@string/timer_start_str"
+        android:src="@drawable/timer_start_btn"
+        tools:ignore="ImageContrastCheck" />
+
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/navContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="94dp"
+        app:constraint_referenced_ids="instructionBtn, breaksBtn"
+        app:flow_horizontalStyle="packed"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908" />
+
+    <ImageButton
+        android:id="@+id/instructionBtn"
+        style="@style/imageNavs"
+        android:layout_marginTop="584dp"
+        android:contentDescription="@string/instructions_nav_str"
+        android:src="@drawable/instructions_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/breaksBtn"
+        style="@style/imageNavs"
+        android:layout_marginTop="584dp"
+        android:contentDescription="@string/breaks_nav_str"
+        android:src="@drawable/breaks_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ImageContrastCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgreen"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="420dp"
+    android:fitsSystemWindows="false">
+
+    <!-- Mode Button -->
+    <ImageButton
+        android:id="@+id/modeBtn"
+        style="@style/imageBtn"
+        android:contentDescription="@string/mode_pin"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tinesContainer"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/pet"
+        />
+
+    <!-- Instructions Button -->
+    <ImageButton
+        android:id="@+id/instructionsBtn"
+        style="@style/imageBtn"
+        android:contentDescription="@string/instructions_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tinesContainer"
+        app:layout_constraintVertical_bias="0.931"
+        app:srcCompat="@drawable/instructions" />
+
+    <!-- Tines/Keys Container -->
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/tinesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        app:constraint_referenced_ids="note_1,note_2,note_3,note_4,note_5,note_6,note_7,note_8,note_9"
+        app:flow_horizontalAlign="start"
+        app:flow_horizontalGap="5dp"
+        app:flow_horizontalStyle="packed"
+        app:flow_verticalAlign="top"
+        app:flow_verticalStyle="packed"
+        app:flow_wrapMode="chain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/note_1"
+        style="@style/tine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/note_1"
+        app:layout_constraintHeight_percent="0.59"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/note_2"
+        style="@style/tine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/note_2"
+        app:layout_constraintHeight_percent="0.61"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/note_3"
+        style="@style/tine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/note_3"
+        app:layout_constraintHeight_percent="0.62"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/note_4"
+        style="@style/tine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/note_4"
+        app:layout_constraintHeight_percent="0.64"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/note_5"
+        style="@style/tine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/note_5"
+        app:layout_constraintHeight_percent="0.66"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/note_6"
+        style="@style/tine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/note_6"
+        app:layout_constraintHeight_percent="0.64"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/note_7"
+        style="@style/tine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/note_7"
+        app:layout_constraintHeight_percent="0.62"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/note_8"
+        style="@style/tine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/note_8"
+        app:layout_constraintHeight_percent="0.61"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/note_9"
+        style="@style/tine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/note_9"
+        app:layout_constraintHeight_percent="0.59"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Play Mode Container -->
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/playContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="leftBtn,holeImg,rightBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tinesContainer"
+        app:flow_horizontalGap="10dp"/>
+
+    <!-- Pet Image -->
+    <ImageView
+        android:id="@+id/holeImg"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/pet_0" />
+
+    <!-- Right Button -->
+    <ImageButton
+            android:id="@+id/rightBtn"
+            style="@style/imageBtn"
+            android:contentDescription="@string/right_btn"
+        android:visibility="gone"
+        app:srcCompat="@drawable/right" />
+
+    <!-- Left Button -->
+    <ImageButton
+        android:id="@+id/leftBtn"
+        style="@style/imageBtn"
+        android:contentDescription="@string/left_btn"
+        android:visibility="gone"
+        app:srcCompat="@drawable/left" />
+
+
+    <!-- PIN Mode Container -->
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/pinContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="pin_1,pin_2,pin_3,pin_4"
+        app:flow_horizontalGap="0dp"
+        app:flow_verticalAlign="top"
+        app:flow_verticalStyle="packed"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tinesContainer" />
+
+        <ImageView
+            android:id="@+id/pin_1"
+            style="@style/pinBox"
+            app:srcCompat="@drawable/pin_placeholder"/>
+
+        <ImageView
+            android:id="@+id/pin_2"
+            style="@style/pinBox"
+            app:srcCompat="@drawable/pin_placeholder"/>
+
+        <ImageView
+            android:id="@+id/pin_3"
+            style="@style/pinBox"
+            app:srcCompat="@drawable/pin_placeholder"/>
+
+        <ImageView
+            android:id="@+id/pin_4"
+            style="@style/pinBox"
+            app:srcCompat="@drawable/pin_placeholder"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

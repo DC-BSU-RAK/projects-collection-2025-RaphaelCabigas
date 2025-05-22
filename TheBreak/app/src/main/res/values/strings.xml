@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">the… break</string>
+    <string name="welcome_str">Start The Break</string>
+    <string name="default_timer">00:25:00</string>
+    <string name="timer_start_str">Start The Timer</string>
+    <string name="timer_edit_str">Edit The Timer</string>
+    <string name="instructions_nav_str">Instructions</string>
+    <string name="breaks_nav_str">Breaks\n</string>
+    <string name="back_btn">Go Back\n</string>
+</resources>
